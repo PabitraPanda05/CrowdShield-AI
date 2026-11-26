@@ -1,0 +1,128 @@
+{
+  "project": "CrowdShield AI",
+  "artifact": "Production React Command Center",
+  "freeze_stage": "STEP 551",
+  "freeze_status": "VALIDATED",
+  "generated_at": "2026-10-04T09:52:16.373526",
+  "frontend_path": "C:\\Users\\pabit\\CrowdShield-AI\\frontend\\crowdshield-web",
+  "package_name": "crowdshield-web",
+  "package_version": "0.0.0",
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "lucide-react": "^1.50.0",
+    "recharts": "^3.10.1",
+    "vite": "^8.3.0"
+  },
+  "modules": [
+    {
+      "name": "Command Center",
+      "status": "VALIDATED",
+      "type": "operations_dashboard"
+    },
+    {
+      "name": "Camera Intelligence",
+      "status": "VALIDATED",
+      "type": "camera_perception"
+    },
+    {
+      "name": "Crowd Analytics",
+      "status": "VALIDATED",
+      "type": "crowd_analysis"
+    },
+    {
+      "name": "Risk Map",
+      "status": "VALIDATED",
+      "type": "operational_risk"
+    },
+    {
+      "name": "Response Routing",
+      "status": "VALIDATED",
+      "type": "routing_simulation"
+    },
+    {
+      "name": "AI Pipeline",
+      "status": "VALIDATED",
+      "type": "pipeline_monitoring"
+    },
+    {
+      "name": "Database",
+      "status": "VALIDATED",
+      "type": "data_operations"
+    }
+  ],
+  "api_contract": {
+    "health": "/api/health",
+    "dashboardSummary": "/api/dashboard/summary",
+    "riskTimeline": "/api/risk/timeline",
+    "alerts": "/api/alerts",
+    "cameras": "/api/cameras",
+    "crowdIntelligence": "/api/crowd-intelligence",
+    "crowdIntelligenceFrames": "/api/crowd-intelligence/frames",
+    "crowdIntelligenceAlerts": "/api/crowd-intelligence/alerts",
+    "crowdFlow": "/api/crowd-intelligence/flow",
+    "simulatedRoute": "/api/routes/simulated",
+    "routeValidation": "/api/routes/validation",
+    "databaseHealth": "/api/database/health",
+    "databaseSummary": "/api/database/summary",
+    "databaseCameras": "/api/database/cameras",
+    "databaseRisk": "/api/database/risk",
+    "databaseResponse": "/api/database/response",
+    "databaseRuns": "/api/database/runs"
+  },
+  "api_endpoint_count": 17,
+  "source_files": {
+    "package.json": "65b19fd9ecf6a4241957c7907922f40862f98256978a1923b4d999a2a07ba7a9",
+    "index.html": "d015aeac5c7cbc3efd750cb4ecaf0d8c78da62814cd4cbc198a551f8ee4af14e",
+    "src/main.jsx": "0eb15fbdd1356f521a3ea30737a7efecb118718343e482ce1fe50cd8afee52bf",
+    "src/index.css": "2d2f6cdb2d7fd64196bef9835979aa950f22d1338e9c59b6972572de7cbc06a9",
+    "src/App.jsx": "45021a971c65d038869f5621d21ee059fa6cb595ef702a55f1f5d011e8c5eea3",
+    "src/App.css": "945075ed2ded6ed7b46e4dd1ef6eb3b57244ee8ed951c18b3b4acda1b5995022",
+    "src/api/client.js": "48c5ac7dbfd0bca1dbcfd4bbea3b29140fc2640a28790fa6ffe07ff481fb87b5",
+    "src/api/index.js": "b26e4728b46df46acfed5131c5f2e4cd22cdc44a13c9d2672ae8b7eb19004c63",
+    "src/views/CrowdAnalytics.jsx": "eb328c9e1d1ca588dc1fec17e1d410916db9c2eb9bce076e0e8c2e919dbf3319",
+    "src/views/RiskMap.jsx": "d250c65e99fcdcf0ae16bd8f103d4a41e8516b234cb620c02e28e5913a4c11ff",
+    "src/views/ResponseRouting.jsx": "789eb417c5b9d8defec84457db7868733c7548b725b30e01cd215ae3eb83b763",
+    "src/views/AIPipeline.jsx": "cb66c3805619c05a9203d903166980beb82363108291d2e13f2f17cb812d1f11",
+    "src/views/DatabaseView.jsx": "c994c03c692831ed3ccb973273ba94f174a5df10551787c34c00c2e099e0a02b"
+  },
+  "validation": {
+    "backend_api_audit": "17/17 PASS",
+    "database_validation": "PASS",
+    "production_pipeline_validation": "PASS",
+    "frontend_file_structure": "13/13 PASS",
+    "api_client_methods": "17/17 PASS",
+    "api_route_mapping": "17/17 PASS",
+    "react_views": "5/5 PASS",
+    "safety_terminology": "PASS",
+    "misleading_claim_audit": "PASS \u2014 contextual safety wording verified",
+    "production_build": "PASS"
+  },
+  "safety_contract": {
+    "risk_is_probability": false,
+    "prediction_validated": false,
+    "human_review_required": true,
+    "autonomous_emergency_action": false,
+    "camera_mode": "RECORDED_REPLAY",
+    "live_cctv_available": false,
+    "routing_mode": "SIMULATION_ONLY",
+    "routing_safety_validated": false,
+    "image_space_speed": true,
+    "physical_speed_calibrated": false,
+    "operational_risk_type": "RULE_BASED_DECISION_SUPPORT"
+  },
+  "build": {
+    "build_command": "npm run build",
+    "build_status": "PASS",
+    "build_tool": "Vite",
+    "typescript_check": "PASS",
+    "production_bundle": true,
+    "dist_files": [
+      "dist\\assets\\index-CADGizGE.css",
+      "dist\\assets\\index-c9sl6f-P.js",
+      "dist\\favicon.svg",
+      "dist\\icons.svg",
+      "dist\\index.html"
+    ]
+  }
+}

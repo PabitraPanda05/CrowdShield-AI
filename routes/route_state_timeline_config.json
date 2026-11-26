@@ -1,0 +1,30 @@
+{
+    "engine": "CrowdShield AI Operational Decision Timeline",
+    "version": "1.0-prototype",
+    "purpose": "Combines operational risk, short-term forecasting, response decisions, route reassessment, and simulated route switching into a single chronological decision timeline.",
+    "windows": 20,
+    "route_switches": 5,
+    "routes_maintained": 15,
+    "high_critical_windows": 4,
+    "predictive_escalation_windows": 1,
+    "decision_states": {
+        "MONITOR": 13,
+        "REROUTED": 4,
+        "LOW RISK": 2,
+        "CRITICAL": 1
+    },
+    "route_states": {
+        "ROUTE_MAINTAINED": 15,
+        "ROUTE_SWITCHED": 5
+    },
+    "limitations": [
+        "Prototype decision logic",
+        "Short-term forecast is baseline-based",
+        "Operational risk is not a calibrated probability",
+        "Route switching is grid-based simulation",
+        "No real road network",
+        "No live traffic data",
+        "No real emergency travel-time model",
+        "Not safety validated"
+    ]
+}

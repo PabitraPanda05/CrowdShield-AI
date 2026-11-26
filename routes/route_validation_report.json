@@ -1,0 +1,20 @@
+{
+    "frame": 497,
+    "route_type": "Simulated A* route",
+    "total_route_points": 86,
+    "blocked_cells_on_route": 0,
+    "start_point": [
+        5,
+        12
+    ],
+    "destination_point": [
+        90,
+        12
+    ],
+    "start_correct": true,
+    "destination_correct": true,
+    "invalid_consecutive_steps": 0,
+    "obstacle_validation": "PASSED",
+    "continuity_validation": "PASSED",
+    "status": "Simulation only; not safety-validated"
+}

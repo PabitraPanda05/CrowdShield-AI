@@ -1,0 +1,85 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+dist/
+
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+
+.ipynb_checkpoints/
+.pytest_cache/
+*.log
+
+.DS_Store
+Thumbs.db
+
+# Flutter generated files
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+
+# Android generated files
+**/.gradle/
+
+# APK files
+*.apk
+
+# Sensitive certificates
+*.key
+*.crt
+*.pem
+
+# Temporary notebook files
+.ipynb_checkpoints/
+
+# Large demo videos - store separately
+outputs/manual_validation/*.mp4
+# Backup files
+*.bak
+*.backup
+*_backup.*
+*_before_*.py
+**/backups/
+
+# Temporary screenshots
+debug_webcam_frame.jpg
+first_frame.jpg
+webcam_frame.jpg
+# Flutter generated build files
+mobile/**/build/
+
+# Android generated files
+**/.gradle/
+
+# APK files
+*.apk
+
+# Large validation videos
+outputs/manual_validation/*.mp4
+# AI notebooks and generated outputs
+01_data_exploration.ipynb
+notebooks/02_crowdshield_pipeline.ipynb
+outputs/
+weights/*.pt
+yolo*.pt
+crowdshield_manual_validation.csv
+
+# Temporary debugging files
+debug_webcam_frame.jpg
+first_frame.jpg
+webcam_frame.jpg
+stream_test.bin
+
+# MediaMTX executable
+tools/mediamtx/mediamtx.exe
+debug_webcam_frame.jpg
+first_frame.jpg
+webcam_frame.jpg
+stream_test.bin

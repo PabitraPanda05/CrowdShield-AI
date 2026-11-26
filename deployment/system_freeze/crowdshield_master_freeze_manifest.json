@@ -1,0 +1,82 @@
+{
+  "project": "CrowdShield AI",
+  "title": "CrowdShield AI: An Intelligent Multimodal Crowd Safety, Risk Prediction and Emergency Response System",
+  "artifact": "MASTER SYSTEM FREEZE",
+  "freeze_stage": "STEP 553",
+  "freeze_status": "VALIDATED",
+  "generated_at": "2026-10-04T09:56:47.659568",
+  "components": {
+    "production_ai_pipeline": "VALIDATED",
+    "backend": "VALIDATED",
+    "database": "VALIDATED",
+    "react_frontend": "VALIDATED",
+    "api_contract": "17/17 PASS",
+    "frontend_api_client": "17/17 PASS",
+    "end_to_end_consistency": "PASS",
+    "production_build": "PASS",
+    "camera_contract": "PASS",
+    "safety_contract": "PASS"
+  },
+  "frontend_freeze": "C:\\Users\\pabit\\CrowdShield-AI\\deployment\\frontend_freeze\\frontend_freeze_manifest.json",
+  "backend_freeze": "C:\\Users\\pabit\\CrowdShield-AI\\deployment\\backend_freeze\\backend_freeze_manifest.json",
+  "pipeline_freeze": "C:\\Users\\pabit\\CrowdShield-AI\\deployment\\pipeline_freeze\\pipeline_freeze_manifest.json",
+  "production_outputs": {
+    "frame_results.csv": "10a46955b84a0fdf052790fd7c3b7db32f724324b61fdaff9e584c8ef82879fb",
+    "frame_risk_features.csv": "00fb047533c55f6c14672595cbae39b55b37377782fc4c7ce1e6e7fa39336a10",
+    "temporal_windows.csv": "8aed08117e33e734585f9f26516556a7b115ee9408334fa2501abd211448e301",
+    "operational_risk.csv": "7a055a2485aab144048ef827521e7be09af8aec864994191b556d7fbc76e76ea",
+    "response_decisions.csv": "474fe9410287ed3817b366aa76c13b219090706974566f2a3d7ac500f24e1714",
+    "latest_state.json": "4c34ab737a348246b5dfd9ae699b2638c4e8c059eeb56c420ea624aba6830a2a",
+    "pipeline_metadata.json": "51d58148c903ad435a84500f9e081c9a036730a46d3ace909a2d973d4344a26d"
+  },
+  "database": {
+    "path": "C:\\Users\\pabit\\CrowdShield-AI\\data\\database\\crowdshield.db",
+    "sha256": "f8bef13f7fd948d612d4783d7208c207adea29bd1236caf70d25c77d2fa3692d"
+  },
+  "backend_source": {
+    "backend\\api\\main.py": "0a859a33a05608e11332d7607027f445662e521fdad336967d7b80c23d975fae",
+    "backend\\services\\production_data_service.py": "59f02fc9ca5711e810c41fe77ea11d70b2b1ba52f8feb6a3372f7cf1e893602e",
+    "backend\\services\\database_service.py": "308fb23c425d26eeeb0771e979b5459ae31bfb3577fd435a21487827a136c138"
+  },
+  "production_ai_source": {
+    "src\\detection\\yolo_detector.py": "829e52e97da22c15c1d92198461017b886daf5d786500af0d6e4c6a8b73df6eb",
+    "src\\tracking\\bytetrack_tracker.py": "c7e60eb3912024e041416da93987f11b444106fb8fd923c03f94bc544bc45925",
+    "src\\crowd\\crowd_intelligence.py": "e6f3911dd2645316d1d2f66685d1c1aedcdbfd9c9399ec171f83780b5d01bfb0",
+    "src\\risk\\risk_features.py": "f9c9eaca17a77b90d8505727b12da6da19a6e581a1e4bb1a2a0b8df756ac6054",
+    "src\\risk\\temporal_aggregator.py": "521ec24e8d306a48b387df2d2e53e778defce3ef877ec46b98954707271b3a63",
+    "src\\risk\\operational_risk.py": "141c799f5654e72878e843676dc3be429c22305916a0bb7a5be84c971d7dbab7",
+    "src\\response\\response_engine.py": "3fc10ba6398dc58cdbd9d2574fc013ce960863e3b8dd808b5a393f09c2e52bd7",
+    "src\\routing\\risk_aware_router.py": "a9eaef262074657fefdb27a5b82a6641504910accd241655ecfdd7cd231751e3",
+    "src\\pipeline\\production_pipeline.py": "4baa05c5b054cc5a33d99f797a7510b31be339d711954e674bde20ccb226226c",
+    "src\\camera\\camera_source.py": "2adbe10fb708359345365deb285c26a3f0e9dfe38ef0cf16025b3f892cd0ca34"
+  },
+  "safety_contract": {
+    "risk_is_probability": false,
+    "prediction_validated": false,
+    "human_review_required": true,
+    "autonomous_emergency_action": false,
+    "camera_type": "RECORDED_REPLAY",
+    "camera_source_type": "recorded_video",
+    "live_camera_available": false,
+    "live_stream": false,
+    "routing_type": "SIMULATED_A_STAR",
+    "routing_safety_validated": false,
+    "image_space_speed": true,
+    "physical_speed_calibrated": false,
+    "operational_risk": "RULE_BASED_DECISION_SUPPORT",
+    "system_role": "DECISION_SUPPORT_ONLY"
+  },
+  "system_architecture": [
+    "Recorded Camera Source",
+    "YOLO Person Detection",
+    "ByteTrack Multi-Object Tracking",
+    "Crowd Intelligence",
+    "Risk Feature Engine",
+    "Temporal Risk Aggregation",
+    "Operational Risk Engine",
+    "Response Decision Engine",
+    "SQLite Database",
+    "FastAPI Backend",
+    "React Command Center"
+  ]
+}

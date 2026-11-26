@@ -1,0 +1,40 @@
+{
+    "engine": "CrowdShield AI Risk-Aware A* Routing Prototype",
+    "version": "1.0-prototype",
+    "routing_parameters": {
+        "corridor_radius": 2,
+        "distance_weight": 1.0,
+        "risk_weight": 4.0
+    },
+    "baseline": {
+        "route_points": 86,
+        "risk_exposure": 3119.5552,
+        "mean_risk": 36.2739,
+        "maximum_risk": 71.1029,
+        "high_critical_points": 16
+    },
+    "dynamic_route": {
+        "route_points": 90,
+        "risk_exposure": 1786.9997,
+        "mean_risk": 19.8556,
+        "maximum_risk": 71.1029,
+        "high_critical_points": 16
+    },
+    "improvement": {
+        "risk_reduction": 1332.5555,
+        "risk_reduction_percentage": 42.72,
+        "mean_risk_reduction_percentage": 45.26,
+        "additional_route_points": 4,
+        "route_length_increase_percentage": 4.65
+    },
+    "interpretation": "The controlled risk-aware A* prototype reduced aggregate simulated risk exposure while increasing route length slightly. HIGH/CRITICAL exposure was not eliminated.",
+    "limitations": [
+        "Synthetic grid-based route",
+        "Risk is derived from the prototype operational risk engine",
+        "Spatial risk is propagated around the baseline route",
+        "No real road-network geometry",
+        "No real emergency travel-time data",
+        "Not safety validated",
+        "Not suitable for real emergency deployment"
+    ]
+}

@@ -1,0 +1,6 @@
+window_id,operational_risk_score,operational_risk_level,forecast_risk_level,forecast_trend,baseline_window_exposure,dynamic_window_exposure,exposure_reduction,switch_decision,decision_reason
+8,55.97724289608508,HIGH,MODERATE,FALLING,223.90897158434032,111.95448579217016,111.95448579217016,SWITCH_ROUTE,Dynamic route provides lower simulated risk exposure in this window.
+12,60.1315841780958,HIGH,MODERATE,FALLING,240.5263367123832,120.2631683561916,120.2631683561916,SWITCH_ROUTE,Dynamic route provides lower simulated risk exposure in this window.
+13,44.45811965811966,MODERATE,HIGH,RISING,222.29059829059827,111.14529914529913,111.14529914529913,SWITCH_ROUTE,Dynamic route provides lower simulated risk exposure in this window.
+18,54.45163500047016,HIGH,MODERATE,FALLING,217.80654000188065,81.67745250070524,136.1290875011754,SWITCH_ROUTE,Dynamic route provides lower simulated risk exposure in this window.
+19,71.10293995742968,CRITICAL,HIGH,FALLING,284.41175982971873,277.04880931597694,7.362950513741794,SWITCH_ROUTE,Dynamic route provides lower simulated risk exposure in this window.

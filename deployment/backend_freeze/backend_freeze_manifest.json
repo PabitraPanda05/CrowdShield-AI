@@ -1,0 +1,66 @@
+{
+  "project": "CrowdShield AI",
+  "freeze_stage": "STEP 515",
+  "freeze_substep": "515A",
+  "freeze_timestamp": "2026-10-03T00:34:21.337353",
+  "backend": {
+    "main_py_sha256": "c07970e5ca4fa2d70b09137d72fa0634bc091060a3106212e26e775d28c248ff",
+    "production_data_service_sha256": "59f02fc9ca5711e810c41fe77ea11d70b2b1ba52f8feb6a3372f7cf1e893602e"
+  },
+  "endpoints": [
+    "/",
+    "/api/health",
+    "/api/dashboard/summary",
+    "/api/risk/timeline",
+    "/api/alerts",
+    "/api/routes/simulated",
+    "/api/routes/validation",
+    "/api/crowd-intelligence",
+    "/api/crowd-intelligence/frames",
+    "/api/crowd-intelligence/alerts",
+    "/api/crowd-intelligence/flow",
+    "/api/cameras"
+  ],
+  "endpoint_count": 12,
+  "production_summary": {
+    "source": "production_pipeline",
+    "summary_type": "production_operational_risk",
+    "processed_windows": 20,
+    "minimum_risk_score": 31.3321216723548,
+    "mean_risk_score": 53.86282435254151,
+    "maximum_risk_score": 71.53691349248504,
+    "risk_distribution": {
+      "HIGH": 13,
+      "MODERATE": 6,
+      "CRITICAL": 1
+    },
+    "response_distribution": {
+      "HIGH-PRIORITY MONITORING": 8,
+      "ESCALATED MONITORING": 5,
+      "MONITOR": 3,
+      "ACTIVE MONITORING": 2,
+      "PREPARE RESPONSE": 1,
+      "CRITICAL MONITORING": 1
+    },
+    "latest_state": {
+      "window_id": 20,
+      "risk_score": 42.04985127151011,
+      "risk_level": "MODERATE",
+      "response_action": "MONITOR",
+      "response_priority": "MEDIUM",
+      "human_review_required": true,
+      "autonomous_emergency_action": false
+    },
+    "human_review_required": true,
+    "autonomous_emergency_action": false
+  },
+  "safety_contract": {
+    "risk_is_probability": false,
+    "prediction_validated": false,
+    "human_review_required": true,
+    "autonomous_emergency_action": false,
+    "camera_source": "recorded_replay",
+    "live_camera_available": false,
+    "routing_status": "demonstration_only_not_safety_validated"
+  }
+}

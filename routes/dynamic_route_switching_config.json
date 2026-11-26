@@ -1,0 +1,26 @@
+{
+    "engine": "CrowdShield AI Dynamic Route Switching Prototype",
+    "version": "1.0-prototype",
+    "reassessment_policy": {
+        "critical": "REROUTE_REASSESSMENT",
+        "high": "REROUTE_REASSESSMENT",
+        "moderate_forecast_high_rising": "REROUTE_REASSESSMENT"
+    },
+    "simulation": {
+        "reassessment_windows": 5,
+        "route_switches": 5,
+        "total_simulated_exposure_reduction": 486.855,
+        "average_exposure_reduction": 97.371
+    },
+    "interpretation": "The prototype reassesses the route when current operational risk is HIGH or CRITICAL, or when moderate risk is forecast to become HIGH while rising. Route switching is selected when the saved dynamic route has lower simulated exposure for the triggered window.",
+    "limitations": [
+        "Synthetic grid-based routing",
+        "Prototype operational risk scores",
+        "Spatial risk is derived from the existing route corridor",
+        "No real road network",
+        "No live traffic or travel-time information",
+        "No real emergency vehicle constraints",
+        "Not safety validated",
+        "Route switch does not guarantee safety"
+    ]
+}

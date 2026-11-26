@@ -1,0 +1,59 @@
+{
+  "step": "515B",
+  "status": "PASS",
+  "pipeline": "CrowdShield AI Production AI Pipeline",
+  "python_version": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "source_hashes": {
+    "src\\pipeline\\production_pipeline.py": "4baa05c5b054cc5a33d99f797a7510b31be339d711954e674bde20ccb226226c",
+    "src\\detection\\yolo_detector.py": "829e52e97da22c15c1d92198461017b886daf5d786500af0d6e4c6a8b73df6eb",
+    "src\\tracking\\bytetrack_tracker.py": "c7e60eb3912024e041416da93987f11b444106fb8fd923c03f94bc544bc45925",
+    "src\\crowd\\crowd_intelligence.py": "e6f3911dd2645316d1d2f66685d1c1aedcdbfd9c9399ec171f83780b5d01bfb0",
+    "src\\risk\\risk_features.py": "f9c9eaca17a77b90d8505727b12da6da19a6e581a1e4bb1a2a0b8df756ac6054",
+    "src\\risk\\temporal_aggregator.py": "521ec24e8d306a48b387df2d2e53e778defce3ef877ec46b98954707271b3a63",
+    "src\\risk\\operational_risk.py": "141c799f5654e72878e843676dc3be429c22305916a0bb7a5be84c971d7dbab7",
+    "src\\response\\response_engine.py": "3fc10ba6398dc58cdbd9d2574fc013ce960863e3b8dd808b5a393f09c2e52bd7",
+    "src\\routing\\risk_aware_router.py": "a9eaef262074657fefdb27a5b82a6641504910accd241655ecfdd7cd231751e3",
+    "src\\camera\\camera_source.py": "2adbe10fb708359345365deb285c26a3f0e9dfe38ef0cf16025b3f892cd0ca34",
+    "src\\config\\production_config.py": "cd214aafd83491bb263423adfb13d383fabcc2113f153b47ad36491187077737"
+  },
+  "pipeline_modules": [
+    "src.pipeline.production_pipeline",
+    "src.detection.yolo_detector",
+    "src.tracking.bytetrack_tracker",
+    "src.crowd.crowd_intelligence",
+    "src.risk.risk_features",
+    "src.risk.temporal_aggregator",
+    "src.risk.operational_risk",
+    "src.response.response_engine",
+    "src.routing.risk_aware_router",
+    "src.camera.camera_source",
+    "src.config.production_config"
+  ],
+  "required_methods": [
+    "process_frame",
+    "process_frames",
+    "process_video",
+    "process_camera",
+    "latest_state"
+  ],
+  "production_outputs": {
+    "frame_results.csv": 498,
+    "frame_risk_features.csv": 498,
+    "temporal_windows.csv": 20,
+    "operational_risk.csv": 20,
+    "response_decisions.csv": 20,
+    "latest_state.json": null,
+    "pipeline_metadata.json": null
+  },
+  "safety_contract": {
+    "risk_is_probability": false,
+    "prediction_validated": false,
+    "human_review_required": true,
+    "autonomous_emergency_action": false,
+    "camera_source": "recorded_replay",
+    "live_camera_available": false,
+    "routing_status": "demonstration_only_not_safety_validated",
+    "image_space_speed": true,
+    "physical_speed_calibrated": false
+  }
+}
